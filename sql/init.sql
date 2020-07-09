@@ -7,7 +7,15 @@ VALUES
         'ACTIVE', 1, 1, 'root', '127.0.0.1',
         now()
     );
-
+INSERT INTO "user"
+    ( user_id, username, password, email, phone_number,
+    cat_user_status, status, tx_id, tx_username, tx_host,
+    tx_date)
+VALUES
+    (  nextval('user_user_id_seq') , 'ariel', '159876', 'ariel@gmail.com', '73734821',
+        'ACTIVE', 1, 1, 'root', '127.0.0.1',
+        now()
+    );
 
 INSERT INTO "user"
 ( user_id, username, password, email, phone_number,
@@ -62,5 +70,16 @@ VALUES (2, 2, 1,  1, 'admin', 'localhost', now());
 
 INSERT INTO user_role ( user_id, role_id, status, tx_id, tx_username, tx_host, tx_date)
 VALUES (2, 1, 1,  1, 'admin', 'localhost', now());
+
+--creacion de catalogo
+INSERT INTO catalog (catalog_name, catalog_description, status, tx_id, tx_username, tx_host, tx_date)
+values ( "Video" , "todos los tipos de video" ,1,1,'admin','localhost',now());
+
+
+--insertar producto
+
+INSERT INTO product (product_code,cat_product_type, product_name, product_description, status, tx_id, tx_username,
+                     tx_host, tx_date)
+VALUES ('jjr','video','Jojo rabbit',1,1,1,'admin','localhost',now());
 
 

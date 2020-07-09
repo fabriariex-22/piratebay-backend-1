@@ -6,12 +6,11 @@ Accept: application/json
   "username": "jperez",
   "password": "123456"
 }
-
 ###
 POST http://localhost:8008/api/v1/security/refresh
 Content-Type: application/json
 Accept: application/json
 
 {
-  "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaXNzIjoiUGlyYXRlQmF5IiwidHlwZSI6IlJFRlJFU0giLCJleHAiOjE1OTEzMTg5NzV9.flGFfarUQf9Eyq06br3MrOJRQidE3ssdXYxjWyd_3BI"
+  "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaXNzIjoiUGlyYXRlQmF5IiwidHlwZSI6IlJFRlJFU0giLCJleHAiOjE1OTIwNjM4NjF9.LPrX9Q1czI6ENqi7rYqdK6PaV_LnetyCvF1Dswde6jU"
 }
